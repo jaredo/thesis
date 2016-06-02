@@ -1,0 +1,45 @@
+
+Hi Jared,
+
+Here's my list:
+
+p.5 ...named Chiamante WHICH is available online
+p.5 Loci specific --> Locus-specific
+p.9 integral limits
+p.12 P(Z_Y=1) =1 etc.
+p.15 affect --> effect (& in some other placed; probably do search &  
+replace)
+p.17 equals one if THE i-th sequence ...
+p.18 same thing
+p.18 eq 2.8  L_4 has a slash through it
+p.20 dependant --> dependent  (& in other placed: search & replace)
+p.20 maybe add that you iterate these steps until convergence
+p.36 fig 2.9: 100 - GCR%
+p.63: labels X = {x_1, ... , x_l}  (not capital X_L).
+p.63 ...now uniquely defines a haplotype that is consistent with G_i.   
+Could that be "diplotype"?  In any way please mention that X  
+determines TWO haplotypes, consistent with genotypes.
+p.63 also mention that there is ONE sequence Z per haplotype, i.e. TWO  
+per sequence X, and that this introduction of an additional nuisance  
+variable is key to the method's fast inference
+p.64 transition probability includes the emission probability as a  
+term; H should be conditioned on.
+p.64 emission probability likely wrong, as discussed (swap = and \neq;  
+theta should probably include the mutation rate in some way)
+p.64 indices in alpha_{l+1} etc. are off by one on this page and p.65
+p.96 add ref to number 0.605
+
+p.100 This highlights that WHILE both methods ...
+p.107 Table 4.6 caption: last sentence needs period
+p.107 why are the M duos more informative about corrections that the P  
+duos?
+p.110 FDR not FPR
+
+p.111 Centre/Centre, and same axis label for centre & right
+p.114 swapped paternal and maternal recombination rates in caption
+p.115 explain the substantial peak in recomb in merlin-only sites
+
+That was it from me!
+
+Best wishes
+Gerton
