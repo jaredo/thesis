@@ -1,0 +1,47 @@
+\documentclass[xcolor=dvipsnames,table]{beamer}
+\usepackage{pgf}
+\usepackage{ctable}
+\usepackage{geometry}
+\usepackage{multirow}
+%\usepackage{multicolumn}
+\usepackage{amsmath}
+\newlength\UBwidth % "UB" stands for "underbrace"
+\newsavebox\UBbox
+\setbeamersize{text margin left=1ex} % Beamer manual, section 8.3
+\setlength{\paperwidth}{10.5cm}
+\setlength{\paperheight}{5.cm}
+\setlength{\textwidth}{10.5cm}
+\setlength{\textheight}{5.cm}
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+
+\begin{frame}[plain,t] 
+\begin{center}
+    \textcolor{Gray}{\texttt{
+%        \rowcolors{1}{pink}{SkyBlue}
+      \begin{tabular}{lrrrrrrrrrrrrrrrrrrrr}
+        \multirow{2}{*}{\textcolor{black}{Truth}}
+        & \cellcolor{pink}0 & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}1 & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}0 & \cellcolor{pink}\textcolor{Red}{0} & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}1 & \cellcolor{pink}0 & \cellcolor{pink}\textcolor{Red}{0} & \cellcolor{pink}0\\
+        & \cellcolor{SkyBlue}0 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}1 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}0 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{1} & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}1 & \cellcolor{SkyBlue}0 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{1} & \cellcolor{SkyBlue}0\\
+&&&&&&&&&&&&&&&&&&\\[-5pt]
+        \multirow{2}{*}{\textcolor{black}{Estimate 1}}   
+        & \cellcolor{pink}0 & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}1 & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}0 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{1} & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}1 & \cellcolor{SkyBlue}0 & \cellcolor{pink}\textcolor{Red}{0} & \cellcolor{pink}0\\
+        & \cellcolor{SkyBlue}0 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}1 &  \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}0 & \cellcolor{pink}\textcolor{Red}{0} & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}1 & \cellcolor{pink}0 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{1} & \cellcolor{SkyBlue}0\\[-12pt]
+         &  &  &  & \multicolumn{2}{l}{$\underbrace{\strut \makebox{~\hspace{12pt}~}}_{\text{\textcolor{black}{Switch}}}$} &  &   
+          & \multicolumn{4}{l}{$\underbrace{\strut \makebox{~\hspace{12pt}~\hspace{12pt}~\hspace{14pt}~}}_{\text{\textcolor{black}{Switch}}}$} & \\
+&&&&&&&&&&&&&&&&&&\\[-10pt]
+        \multirow{2}{*}{\textcolor{black}{Estimate 2}}   
+        & \cellcolor{pink}0 & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}1 & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}0 & \cellcolor{SkyBlue}\textcolor{black}{?} & \cellcolor{SkyBlue}\textcolor{black}{?} & \cellcolor{SkyBlue}1 & \cellcolor{SkyBlue}0 & \cellcolor{pink}\textcolor{Red}{0} & \cellcolor{pink}0\\
+        & \cellcolor{SkyBlue}0 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{SkyBlue}1 &  \cellcolor{SkyBlue}\textcolor{RoyalBlue}{0} & \cellcolor{pink}\textcolor{Red}{1} & \cellcolor{pink}0 & \cellcolor{pink}\textcolor{black}{?} & \cellcolor{pink}\textcolor{black}{?} & \cellcolor{pink}1 & \cellcolor{pink}0 & \cellcolor{SkyBlue}\textcolor{RoyalBlue}{1} & \cellcolor{SkyBlue}0\\[-12pt]
+         &  &  &  & \multicolumn{2}{l}{$\underbrace{\strut \makebox{~\hspace{12pt}~}}_{\text{\textcolor{black}{Switch}}}$} &  &   
+          & &&&\\
+      \end{tabular}}}
+\end{center}
+\end{frame}
+
+
+
+\end{document}
