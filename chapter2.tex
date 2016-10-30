@@ -498,14 +498,14 @@ $$\textrm{Sensitivity}_j = 100 \times  \frac{\sum_{i=1}^N I(\hat{G}_{i=1} = j)I(
 $$\textrm{Specificity}_j = 100 \times  \frac{\sum_{i=1}^N I(G_{i=1} = j)I(G^{\textrm{Axiom}}_{i=1} = j \cap G^{\textrm{Axiom}}_{i=1} \neq \textrm{NULL})}{ \sum_{i=1}^N I(\hat{G}_{i=1} = j \cap G^{\textrm{Axiom}}_{i=1} \neq \textrm{NULL})}$$
 that is, sensitivity is the percentage of the ``true genotypes'' (defined by Axiom) called by a method whilst specificity is the percentage of genotypes called by a method that are correct. 
 \newpage
-In this low frequency scenario we see more substantial improvements. The results are shown in Table \ref{1094tab4}. Chiamante (with sequence) has consistently higher detection rate and lower false positive rate for all genotypes compared to the other methods.  In particular, we identify an extra 0.3\% minor homozygotes with 1.8\% fewer false positives compared to GenoSNP (the next best method for minor homozygotes).  We detect an additional 0.27\% heterozygotes with 0.25\% fewer false positives compared to GenCall, the next best method for heterozygotes. It is important to note here that the Axiom chip is also likely to be inaccurate for low frequency variants hence the error rate will be inflated, however this is still a reasonable way to compare each method on a relative scale. Illuminus has a much lower specificity 80.4\% on minor homozygotes than all the other methods which are all above 88.7\%.  
+In this low frequency scenario we see more substantial improvements. The results are shown in Table \ref{1094tab4}. Chiamante (with sequence) has consistently higher detection rate and lower false discovery rate for all genotypes compared to the other methods.  In particular, we identify an extra 0.3\% minor homozygotes with 1.8\% fewer false positives compared to GenoSNP (the next best method for minor homozygotes).  We detect an additional 0.27\% heterozygotes with 0.25\% fewer false positives compared to GenCall, the next best method for heterozygotes. It is important to note here that the Axiom chip is also likely to be inaccurate for low frequency variants hence the error rate will be inflated, however this is still a reasonable way to compare each method on a relative scale. Illuminus has a much lower specificity 80.4\% on minor homozygotes than all the other methods which are all above 88.7\%.  
 \begin{table}
 \begin{center}
 \begin{tabular}{|ll|c|c|}
   \hline
 %  & &Sensitivity (\%)  & Specificity (\%)\\ 
 % Method & Genotype (G) &  $100 \times P(Call = G | Axiom = G)$ & $100 \times P(Axiom = G | Call = G)$ \\
- Method & Genotype (G) &TPR (\%) & 1-FPR (\%)\\
+ Method & Genotype (G) &TPR (\%) & 1-FDR (\%)\\
  \hline
           & Major homozygote   & 99.78178 & 99.90596 \\
  Chiamante& Heterozygote     & 98.11328 & 98.65827 \\
@@ -529,7 +529,7 @@ In this low frequency scenario we see more substantial improvements. The results
  \hline
 
 \end{tabular}
-\caption[Genotype calling performance at low frequency SNPs]{Sensitivity and specificity per genotype (for variants with MAF $<$ 0.05) for different calling methods using array data (and in Chiamante's case, sequence data) from 1094 individuals with validation data on a subset of 623 of these individuals.  Chiamante calls a higher rate of the low frequency variants whilst maintaining better sensitivity (true positive rate) and specificity (1 - false positive rate).}
+\caption[Genotype calling performance at low frequency SNPs]{Sensitivity and specificity per genotype (for variants with MAF $<$ 0.05) for different calling methods using array data (and in Chiamante's case, sequence data) from 1094 individuals with validation data on a subset of 623 of these individuals.  Chiamante calls a higher rate of the low frequency variants whilst maintaining better sensitivity (true positive rate) and precision (1 - false discovery rate).}
 \label{1094tab4}
 \end{center}
 \end{table}
